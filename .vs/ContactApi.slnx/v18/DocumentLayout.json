@@ -1,0 +1,218 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\dell\\Desktop\\ProjectCS\\ContactApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5A616CFB-E56D-E542-C47E-2FA0C92357B7}|ContactApi\\ContactApi.csproj|c:\\users\\dell\\desktop\\projectcs\\contactapi\\contactapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5A616CFB-E56D-E542-C47E-2FA0C92357B7}|ContactApi\\ContactApi.csproj|solutionrelative:contactapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A616CFB-E56D-E542-C47E-2FA0C92357B7}|ContactApi\\ContactApi.csproj|c:\\users\\dell\\desktop\\projectcs\\contactapi\\contactapi\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A616CFB-E56D-E542-C47E-2FA0C92357B7}|ContactApi\\ContactApi.csproj|solutionrelative:contactapi\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A616CFB-E56D-E542-C47E-2FA0C92357B7}|ContactApi\\ContactApi.csproj|c:\\users\\dell\\desktop\\projectcs\\contactapi\\contactapi\\repository\\contactrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A616CFB-E56D-E542-C47E-2FA0C92357B7}|ContactApi\\ContactApi.csproj|solutionrelative:contactapi\\repository\\contactrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A616CFB-E56D-E542-C47E-2FA0C92357B7}|ContactApi\\ContactApi.csproj|c:\\users\\dell\\desktop\\projectcs\\contactapi\\contactapi\\repository\\icontactrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A616CFB-E56D-E542-C47E-2FA0C92357B7}|ContactApi\\ContactApi.csproj|solutionrelative:contactapi\\repository\\icontactrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A616CFB-E56D-E542-C47E-2FA0C92357B7}|ContactApi\\ContactApi.csproj|c:\\users\\dell\\desktop\\projectcs\\contactapi\\contactapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A616CFB-E56D-E542-C47E-2FA0C92357B7}|ContactApi\\ContactApi.csproj|solutionrelative:contactapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A616CFB-E56D-E542-C47E-2FA0C92357B7}|ContactApi\\ContactApi.csproj|c:\\users\\dell\\desktop\\projectcs\\contactapi\\contactapi\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A616CFB-E56D-E542-C47E-2FA0C92357B7}|ContactApi\\ContactApi.csproj|solutionrelative:contactapi\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A616CFB-E56D-E542-C47E-2FA0C92357B7}|ContactApi\\ContactApi.csproj|c:\\users\\dell\\desktop\\projectcs\\contactapi\\contactapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5A616CFB-E56D-E542-C47E-2FA0C92357B7}|ContactApi\\ContactApi.csproj|solutionrelative:contactapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A616CFB-E56D-E542-C47E-2FA0C92357B7}|ContactApi\\ContactApi.csproj|c:\\users\\dell\\desktop\\projectcs\\contactapi\\contactapi\\models\\contactform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A616CFB-E56D-E542-C47E-2FA0C92357B7}|ContactApi\\ContactApi.csproj|solutionrelative:contactapi\\models\\contactform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A616CFB-E56D-E542-C47E-2FA0C92357B7}|ContactApi\\ContactApi.csproj|c:\\users\\dell\\desktop\\projectcs\\contactapi\\contactapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A616CFB-E56D-E542-C47E-2FA0C92357B7}|ContactApi\\ContactApi.csproj|solutionrelative:contactapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A616CFB-E56D-E542-C47E-2FA0C92357B7}|ContactApi\\ContactApi.csproj|c:\\users\\dell\\desktop\\projectcs\\contactapi\\contactapi\\contactapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{5A616CFB-E56D-E542-C47E-2FA0C92357B7}|ContactApi\\ContactApi.csproj|solutionrelative:contactapi\\contactapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A616CFB-E56D-E542-C47E-2FA0C92357B7}|ContactApi\\ContactApi.csproj|c:\\users\\dell\\desktop\\projectcs\\contactapi\\contactapi\\migrations\\20260413063145_firstmigrate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A616CFB-E56D-E542-C47E-2FA0C92357B7}|ContactApi\\ContactApi.csproj|solutionrelative:contactapi\\migrations\\20260413063145_firstmigrate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\dell\\Desktop\\ProjectCS\\ContactApi\\ContactApi\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "ContactApi\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\dell\\Desktop\\ProjectCS\\ContactApi\\ContactApi\\Properties\\launchSettings.json",
+              "RelativeToolTip": "ContactApi\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAIwAoAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-13T09:49:12.36Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\dell\\Desktop\\ProjectCS\\ContactApi\\ContactApi\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "ContactApi\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\dell\\Desktop\\ProjectCS\\ContactApi\\ContactApi\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "ContactApi\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAAAC8AAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T05:53:53.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IContactRepository.cs",
+              "DocumentMoniker": "C:\\Users\\dell\\Desktop\\ProjectCS\\ContactApi\\ContactApi\\Repository\\IContactRepository.cs",
+              "RelativeDocumentMoniker": "ContactApi\\Repository\\IContactRepository.cs",
+              "ToolTip": "C:\\Users\\dell\\Desktop\\ProjectCS\\ContactApi\\ContactApi\\Repository\\IContactRepository.cs",
+              "RelativeToolTip": "ContactApi\\Repository\\IContactRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T05:46:41.503Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ContactRepository.cs",
+              "DocumentMoniker": "C:\\Users\\dell\\Desktop\\ProjectCS\\ContactApi\\ContactApi\\Repository\\ContactRepository.cs",
+              "RelativeDocumentMoniker": "ContactApi\\Repository\\ContactRepository.cs",
+              "ToolTip": "C:\\Users\\dell\\Desktop\\ProjectCS\\ContactApi\\ContactApi\\Repository\\ContactRepository.cs",
+              "RelativeToolTip": "ContactApi\\Repository\\ContactRepository.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAAA0AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T05:46:33.321Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "20260413063145_FirstMigrate.cs",
+              "DocumentMoniker": "C:\\Users\\dell\\Desktop\\ProjectCS\\ContactApi\\ContactApi\\Migrations\\20260413063145_FirstMigrate.cs",
+              "RelativeDocumentMoniker": "ContactApi\\Migrations\\20260413063145_FirstMigrate.cs",
+              "ToolTip": "C:\\Users\\dell\\Desktop\\ProjectCS\\ContactApi\\ContactApi\\Migrations\\20260413063145_FirstMigrate.cs",
+              "RelativeToolTip": "ContactApi\\Migrations\\20260413063145_FirstMigrate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T06:31:45.984Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\dell\\Desktop\\ProjectCS\\ContactApi\\ContactApi\\appsettings.json",
+              "RelativeDocumentMoniker": "ContactApi\\appsettings.json",
+              "ToolTip": "C:\\Users\\dell\\Desktop\\ProjectCS\\ContactApi\\ContactApi\\appsettings.json",
+              "RelativeToolTip": "ContactApi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-13T06:39:02.328Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ContactController.cs",
+              "DocumentMoniker": "C:\\Users\\dell\\Desktop\\ProjectCS\\ContactApi\\ContactApi\\Controllers\\ContactController.cs",
+              "RelativeDocumentMoniker": "ContactApi\\Controllers\\ContactController.cs",
+              "ToolTip": "C:\\Users\\dell\\Desktop\\ProjectCS\\ContactApi\\ContactApi\\Controllers\\ContactController.cs",
+              "RelativeToolTip": "ContactApi\\Controllers\\ContactController.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAmwDEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T05:43:06.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\dell\\Desktop\\ProjectCS\\ContactApi\\ContactApi\\Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "ContactApi\\Models\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\dell\\Desktop\\ProjectCS\\ContactApi\\ContactApi\\Models\\ApplicationUser.cs",
+              "RelativeToolTip": "ContactApi\\Models\\ApplicationUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T06:07:56.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ContactForm.cs",
+              "DocumentMoniker": "C:\\Users\\dell\\Desktop\\ProjectCS\\ContactApi\\ContactApi\\Models\\ContactForm.cs",
+              "RelativeDocumentMoniker": "ContactApi\\Models\\ContactForm.cs",
+              "ToolTip": "C:\\Users\\dell\\Desktop\\ProjectCS\\ContactApi\\ContactApi\\Models\\ContactForm.cs",
+              "RelativeToolTip": "ContactApi\\Models\\ContactForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T06:31:07.553Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ContactApi.csproj",
+              "DocumentMoniker": "C:\\Users\\dell\\Desktop\\ProjectCS\\ContactApi\\ContactApi\\ContactApi.csproj",
+              "RelativeDocumentMoniker": "ContactApi\\ContactApi.csproj",
+              "ToolTip": "C:\\Users\\dell\\Desktop\\ProjectCS\\ContactApi\\ContactApi\\ContactApi.csproj",
+              "RelativeToolTip": "ContactApi\\ContactApi.csproj",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAkwBcAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-13T05:19:27.935Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\dell\\Desktop\\ProjectCS\\ContactApi\\ContactApi\\Program.cs",
+              "RelativeDocumentMoniker": "ContactApi\\Program.cs",
+              "ToolTip": "C:\\Users\\dell\\Desktop\\ProjectCS\\ContactApi\\ContactApi\\Program.cs",
+              "RelativeToolTip": "ContactApi\\Program.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAAAGQAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T05:08:13.742Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
