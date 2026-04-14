@@ -1,11 +1,11 @@
 ﻿using ContactApi.Data;
-using ContactApi.Models;
 using ContactApi.Dto;
+using ContactApi.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace ContactApi.Repository
 {
-    public class ContactRepository     : IContactRepository
+    public class ContactRepository : IContactRepository
     {
         private readonly AppDbContext _context;
 

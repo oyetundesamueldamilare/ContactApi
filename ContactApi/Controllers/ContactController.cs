@@ -1,7 +1,6 @@
 ﻿using ContactApi.Dto;
 using ContactApi.Repository;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 
@@ -19,7 +18,7 @@ namespace ContactApi.Controllers
             _contactRepository = contactRepository;
         }
 
-        [HttpGet]   
+        [HttpGet]
         public async Task<IActionResult> GetAllContacts()
         {
             var contacts = await _contactRepository.GetAllContactFormsAsync();
@@ -38,7 +37,7 @@ namespace ContactApi.Controllers
         }
 
         [HttpPost]
-          
+
         public async Task<string> CreateContact([FromBody] ContactDto contactForm)
         {
             if (contactForm == null)
@@ -81,4 +80,4 @@ namespace ContactApi.Controllers
             }
         }
     }
- }
+}
