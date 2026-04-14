@@ -58,11 +58,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             },
             {
               "$type": "Document",
@@ -83,9 +87,9 @@
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\dell\\Desktop\\ProjectCS\\ContactApi\\ContactApi\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "ContactApi\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\dell\\Desktop\\ProjectCS\\ContactApi\\ContactApi\\Properties\\launchSettings.json",
-              "RelativeToolTip": "ContactApi\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAABcAAAAnAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\dell\\Desktop\\ProjectCS\\ContactApi\\ContactApi\\Properties\\launchSettings.json*",
+              "RelativeToolTip": "ContactApi\\Properties\\launchSettings.json*",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvxQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2026-04-13T09:49:12.36Z",
               "EditorCaption": ""
@@ -131,19 +135,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "20260413063145_FirstMigrate.cs",
-              "DocumentMoniker": "C:\\Users\\dell\\Desktop\\ProjectCS\\ContactApi\\ContactApi\\Migrations\\20260413063145_FirstMigrate.cs",
-              "RelativeDocumentMoniker": "ContactApi\\Migrations\\20260413063145_FirstMigrate.cs",
-              "ToolTip": "C:\\Users\\dell\\Desktop\\ProjectCS\\ContactApi\\ContactApi\\Migrations\\20260413063145_FirstMigrate.cs",
-              "RelativeToolTip": "ContactApi\\Migrations\\20260413063145_FirstMigrate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-13T06:31:45.984Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\dell\\Desktop\\ProjectCS\\ContactApi\\ContactApi\\appsettings.json",
@@ -153,6 +144,19 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2026-04-13T06:39:02.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "20260413063145_FirstMigrate.cs",
+              "DocumentMoniker": "C:\\Users\\dell\\Desktop\\ProjectCS\\ContactApi\\ContactApi\\Migrations\\20260413063145_FirstMigrate.cs",
+              "RelativeDocumentMoniker": "ContactApi\\Migrations\\20260413063145_FirstMigrate.cs",
+              "ToolTip": "C:\\Users\\dell\\Desktop\\ProjectCS\\ContactApi\\ContactApi\\Migrations\\20260413063145_FirstMigrate.cs",
+              "RelativeToolTip": "ContactApi\\Migrations\\20260413063145_FirstMigrate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T06:31:45.984Z",
               "EditorCaption": ""
             },
             {
@@ -214,14 +218,6 @@
               "ViewState": "AgIAAGQAAAAAAAAAAAAAAGQAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-13T05:08:13.742Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             }
           ]
         }
