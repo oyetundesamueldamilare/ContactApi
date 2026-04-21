@@ -36,6 +36,7 @@ namespace ContactApi.Controllers
             return Ok(contact);
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpPost]
 
         public async Task<string> CreateContact([FromBody] ContactDto contactForm)
@@ -66,7 +67,7 @@ namespace ContactApi.Controllers
             }
         }
         [HttpDelete]
-
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteContact(int id)
         {
             try
