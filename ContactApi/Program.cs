@@ -1,6 +1,8 @@
 using ContactApi.Data;
+using ContactApi.Helpers;
 using ContactApi.Models;
 using ContactApi.Repository;
+using ContactApi.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -47,6 +49,9 @@ builder.Services.AddAuthentication(options =>
 
 // --- 3. Dependency Injection & API Config ---
 builder.Services.AddScoped<IContactRepository, ContactRepository>();
+builder.Services.AddScoped<IJwtTokenService, JwtTokenService>();
+builder.Services.AddScoped<IContactQueryRepository, ContactQueryRepository>();
+
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 
@@ -85,6 +90,13 @@ builder.Services.AddSwaggerGen(options =>
 });
 
 var app = builder.Build();
+
+// Run seeding after app is built
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    await SeedDataHelper.SeedRolesAndUsersAsync(services);
+}
 
 // --- 4. Middleware Pipeline ---
 if (app.Environment.IsDevelopment())

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "t3LPonxJOW0=",
+  "dgSpecHash": "D+Wh2A/D08A=",
   "success": true,
-  "projectFilePath": "C:\\Users\\dell\\Desktop\\ProjectCS\\ContactApi\\ContactApi\\ContactApi.csproj",
+  "projectFilePath": "C:\\Users\\dell\\Desktop\\Damilare\\ProjectCS\\ContactApi\\ContactApi\\ContactApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dell\\.nuget\\packages\\azure.core\\1.47.1\\azure.core.1.47.1.nupkg.sha512",
     "C:\\Users\\dell\\.nuget\\packages\\azure.identity\\1.14.2\\azure.identity.1.14.2.nupkg.sha512",
@@ -57,6 +57,7 @@
     "C:\\Users\\dell\\.nuget\\packages\\system.composition.typedparts\\9.0.0\\system.composition.typedparts.9.0.0.nupkg.sha512",
     "C:\\Users\\dell\\.nuget\\packages\\system.configuration.configurationmanager\\9.0.4\\system.configuration.configurationmanager.9.0.4.nupkg.sha512",
     "C:\\Users\\dell\\.nuget\\packages\\system.identitymodel.tokens.jwt\\8.0.1\\system.identitymodel.tokens.jwt.8.0.1.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\system.linq.dynamic.core\\1.7.2\\system.linq.dynamic.core.1.7.2.nupkg.sha512",
     "C:\\Users\\dell\\.nuget\\packages\\system.memory.data\\8.0.1\\system.memory.data.8.0.1.nupkg.sha512",
     "C:\\Users\\dell\\.nuget\\packages\\system.security.cryptography.pkcs\\9.0.4\\system.security.cryptography.pkcs.9.0.4.nupkg.sha512",
     "C:\\Users\\dell\\.nuget\\packages\\system.security.cryptography.protecteddata\\9.0.4\\system.security.cryptography.protecteddata.9.0.4.nupkg.sha512"

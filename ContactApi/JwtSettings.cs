@@ -6,5 +6,4 @@
     public string Audience { get; set; } = string.Empty;
     public int ExpirationMinutes { get; set; }
 
-
 }
