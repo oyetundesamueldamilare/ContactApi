@@ -26,7 +26,7 @@ namespace ContactApi.Controllers
             _logger.LogInformation(
                 "GetAll contacts — page: {Page}, size: {Size}, sortBy: {SortBy}, sortDesc: {SortDesc}, name: {Name}, email: {Email}, contactId: {ContactId}",
                 queryParams.PageNumber, queryParams.PageSize, queryParams.SortBy, queryParams.SortDesc,
-                queryParams.Name, queryParams.Email, queryParams.ContactId);
+                queryParams.Name, queryParams.Email, queryParams.Id);
 
             var result = await _contactQuery.GetAllAsync(queryParams);
 

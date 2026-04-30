@@ -334,7 +334,7 @@
       "ContactDto": {
         "type": "object",
         "properties": {
-          "contactId": {
+          "id": {
             "type": "integer",
             "format": "int32"
           },

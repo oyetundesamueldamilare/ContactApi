@@ -8,8 +8,8 @@ namespace ContactApi.Repository
     public class ContactQueryRepository       : IContactQueryRepository
     {
 
-        private readonly AppDbContext _context;       
-
+        private readonly AppDbContext _context;     
+       
         public ContactQueryRepository(AppDbContext context)
         {
             _context = context;
@@ -24,8 +24,8 @@ namespace ContactApi.Repository
                 query = query.Where(e => e.Name.Contains(q.Name));
             if (!string.IsNullOrWhiteSpace(q.Email))
                 query = query.Where(e => e.Email.Contains(q.Email));
-            if (q.ContactId.HasValue)
-                query = query.Where(e => e.Id == q.ContactId.Value);
+            if (q.Id.HasValue)
+                query = query.Where(e => e.Id == q.Id.Value);
 
             var totalCount = await query.CountAsync();
 
@@ -44,13 +44,14 @@ namespace ContactApi.Repository
                 .Take(q.PageSize)
                 .Select(e => new ContactDto
                 {
-                    ContactId = e.Id,
+                    Id = e.Id,
                     Name = e.Name,
                     Email = e.Email,
                     PhoneNumber = e.PhoneNumber,
                      })
                 .ToListAsync();
 
+        
             return new PagedResult<ContactDto>
             {
                 Items = items,

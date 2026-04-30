@@ -5,7 +5,7 @@
         public string? Name { get; set; }
         public string? Email { get; set; }
         public string? PhoneNumber { get; set; }
-        public int? ContactId { get; set; }
+        public int? Id { get; set; }
 
         // Sorting
         public string? SortBy { get; set; }        // name | email | phoneNumber
