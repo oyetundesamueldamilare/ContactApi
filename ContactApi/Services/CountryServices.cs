@@ -6,21 +6,20 @@ namespace ContactApi.Services
 {
     /// <summary>
     /// Service for interacting with external Country data.
-    /// Built to support scalable and data-driven backend operations.
+    /// Optimized for high-performance .NET backend operations.
     /// </summary>
     public class CountryServices : ICountryServices
     {
         private readonly HttpClient _httpClient;
         private readonly ILogger<CountryServices> _logger;
 
-        // Optimized for case-insensitive JSON coming from external REST APIs
         private static readonly JsonSerializerOptions _jsonOptions = new()
         {
             PropertyNameCaseInsensitive = true
         };
 
-        // Standardized field filtering to minimize payload size and improve latency
-        private const string FilteredFields = "fields=name,region,subregion,population";
+        // Added 'capital' and 'flags' to the filter to match the enhanced requirements
+        private const string FilteredFields = "fields=name,region,subregion,population,capital,flags";
 
         public CountryServices(HttpClient httpClient, ILogger<CountryServices> logger)
         {
@@ -29,7 +28,7 @@ namespace ContactApi.Services
         }
 
         /// <summary>
-        /// Retrieves all countries with optimized field selection.
+        /// Retrieves all countries, sorted alphabetically by common name.
         /// </summary>
         public async Task<IEnumerable<CountryDto>> GetAllCountriesAsync()
         {
@@ -56,7 +55,12 @@ namespace ContactApi.Services
                 }
 
                 _logger.LogInformation("Successfully processed {Count} countries.", countries.Count);
-                return countries.Select(MapToDto).ToList();
+
+                // Implemented Alphabetical Sorting for better UX consistency
+                return countries
+                    .Select(MapToDto)
+                    .OrderBy(c => c.Name.common)
+                    .ToList();
             }
             catch (Exception ex)
             {
@@ -66,13 +70,15 @@ namespace ContactApi.Services
         }
 
         /// <summary>
-        /// Retrieves a specific country by name.
+        /// Retrieves a specific country by name with URL-safe encoding.
         /// </summary>
         public async Task<CountryDto?> GetCountryByNameAsync(string name)
         {
             if (string.IsNullOrWhiteSpace(name)) return null;
 
-            string endpoint = $"name/{name}?{FilteredFields}";
+            // Implemented Uri.EscapeDataString to safely handle spaces and special characters
+            string encodedName = Uri.EscapeDataString(name);
+            string endpoint = $"name/{encodedName}?{FilteredFields}";
 
             try
             {
@@ -97,7 +103,7 @@ namespace ContactApi.Services
         }
 
         /// <summary>
-        /// Maps internal API models to professional DTOs, ensuring data integrity.
+        /// Maps internal API models to professional DTOs with support for new fields.
         /// </summary>
         private static CountryDto MapToDto(CountryApiResponse apiModel)
         {
@@ -110,26 +116,33 @@ namespace ContactApi.Services
                 },
                 Region = apiModel.Region ?? "N/A",
                 Subregion = apiModel.Subregion ?? "N/A",
-                Population = apiModel.Population
+                Population = apiModel.Population,
+                // Added new mappings for Capital and FlagUrl
+                Capital = apiModel.Capital?.FirstOrDefault() ?? "N/A",
+                FlagUrl = apiModel.Flags?.Png ?? string.Empty
             };
         }
 
         #region Internal API Models
-        // These models are kept private to the service to prevent leaking 
-        // external dependencies into the rest of the application.
-
         private class CountryApiResponse
         {
             public NameResponse Name { get; set; } = new();
             public string? Region { get; set; }
             public string? Subregion { get; set; }
             public long Population { get; set; }
+            public List<string>? Capital { get; set; } // API returns capital as an array
+            public FlagsResponse? Flags { get; set; }
         }
 
         private class NameResponse
         {
             public string? Common { get; set; }
             public string? Official { get; set; }
+        }
+
+        private class FlagsResponse
+        {
+            public string? Png { get; set; }
         }
         #endregion
     }
