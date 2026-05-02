@@ -7,12 +7,13 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
-using Microsoft.OpenApi.Models; // Standard using
+using Microsoft.OpenApi.Models;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // --- 1. Database & Identity Services ---
+// Utilizing SQL Server as per your established project stack.
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
@@ -20,11 +21,14 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
     .AddEntityFrameworkStores<AppDbContext>()
     .AddDefaultTokenProviders();
 
-// --- 2. Authentication & JWT Configuration ---
-var jwtSettings = builder.Configuration.GetSection("Jwt").Get<JwtSettings>() ?? new JwtSettings();
-var key = Encoding.UTF8.GetBytes(jwtSettings.Key ?? throw new InvalidOperationException("JWT Key missing in appsettings.json"));
+// --- 2. Configuration & JWT Logic ---
+// Using the Options pattern for better type safety and testability.
+var jwtSection = builder.Configuration.GetSection("Jwt");
+builder.Services.Configure<JwtSettings>(jwtSection);
+var jwtSettings = jwtSection.Get<JwtSettings>() ?? throw new InvalidOperationException("JWT settings are not configured.");
 
-builder.Services.AddSingleton(jwtSettings);
+var key = Encoding.UTF8.GetBytes(jwtSettings.Key ?? throw new InvalidOperationException("JWT Key missing."));
+
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -47,21 +51,34 @@ builder.Services.AddAuthentication(options =>
     };
 });
 
-// --- 3. Dependency Injection & API Config ---
+// --- 3. Dependency Injection (Repositories & Services) ---
 builder.Services.AddScoped<IContactRepository, ContactRepository>();
-builder.Services.AddScoped<IJwtTokenService, JwtTokenService>();
 builder.Services.AddScoped<IContactQueryRepository, ContactQueryRepository>();
+builder.Services.AddScoped<IJwtTokenService, JwtTokenService>();
 
+// --- 4. HttpClient Registration (With "Trailing Slash Insurance") ---
+var rawBaseUrl = builder.Configuration["CountryApi:BaseUrl"];
+if (string.IsNullOrWhiteSpace(rawBaseUrl))
+    throw new InvalidOperationException("Country API BaseUrl is not configured.");
+
+// Ensure the BaseAddress always ends with a slash to prevent resolution issues.
+var baseUrl = rawBaseUrl.EndsWith("/") ? rawBaseUrl : $"{rawBaseUrl}/";
+
+builder.Services.AddHttpClient<ICountryServices, CountryServices>(client =>
+{
+    client.BaseAddress = new Uri(baseUrl);
+    client.Timeout = TimeSpan.FromSeconds(60);
+    client.DefaultRequestHeaders.Add("Accept", "application/json");
+});
+
+// --- 5. API Configuration ---
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 
+// Standardizing Swagger for JWT Security as used in your LMS and Food projects[cite: 1].
 builder.Services.AddSwaggerGen(options =>
 {
-    options.SwaggerDoc("v1", new OpenApiInfo
-    {
-        Title = "Contact API",
-        Version = "v1"
-    });
+    options.SwaggerDoc("v1", new OpenApiInfo { Title = "Contact API", Version = "v1" });
 
     options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
@@ -70,7 +87,7 @@ builder.Services.AddSwaggerGen(options =>
         Scheme = "bearer",
         BearerFormat = "JWT",
         In = ParameterLocation.Header,
-        Description = "Paste your JWT token here"
+        Description = "Enter your JWT token."
     });
 
     options.AddSecurityRequirement(new OpenApiSecurityRequirement
@@ -78,27 +95,38 @@ builder.Services.AddSwaggerGen(options =>
         {
             new OpenApiSecurityScheme
             {
-                Reference = new OpenApiReference
-                {
-                    Type = ReferenceType.SecurityScheme,
-                    Id = "Bearer"
-                }
+                Reference = new OpenApiReference { Type = ReferenceType.SecurityScheme, Id = "Bearer" }
             },
             Array.Empty<string>()
         }
     });
 });
 
+// Adding CORS policy (Critical for modern web frontends)
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", policy =>
+        policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+});
+
 var app = builder.Build();
 
-// Run seeding after app is built
+// --- 6. Initialization & Seeding ---
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
-    await SeedDataHelper.SeedRolesAndUsersAsync(services);
+    try
+    {
+        await SeedDataHelper.SeedRolesAndUsersAsync(services);
+    }
+    catch (Exception ex)
+    {
+        var logger = services.GetRequiredService<ILogger<Program>>();
+        logger.LogError(ex, "An error occurred during database seeding.");
+    }
 }
 
-// --- 4. Middleware Pipeline ---
+// --- 7. Middleware Pipeline ---
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -106,8 +134,11 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-app.UseAuthentication(); // Ensure Authentication is before Authorization
+app.UseCors("AllowAll"); // Apply CORS before Auth
+
+app.UseAuthentication();
 app.UseAuthorization();
+
 app.MapControllers();
 
 app.Run();

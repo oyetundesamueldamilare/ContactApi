@@ -144,7 +144,7 @@
         "IsRequired": false
       },
       {
-        "Name": "ContactId",
+        "Name": "Id",
         "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "IsRequired": false
       },
@@ -180,6 +180,32 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "ContactApi.Controllers.CountryController",
+    "Method": "GetCountry",
+    "RelativePath": "api/Country/{name}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ContactApi.Controllers.CountryController",
+    "Method": "GetAllCountries",
+    "RelativePath": "api/Country/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "ContactApi.Controllers.RoleController",

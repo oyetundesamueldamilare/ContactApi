@@ -204,6 +204,7 @@ C:\Users\dell\Desktop\Damilare\ProjectCS\ContactApi\ContactApi\bin\Debug\net10.0
 C:\Users\dell\Desktop\Damilare\ProjectCS\ContactApi\ContactApi\bin\Debug\net10.0\Microsoft.VisualStudio.SolutionPersistence.dll
 C:\Users\dell\Desktop\Damilare\ProjectCS\ContactApi\ContactApi\bin\Debug\net10.0\Mono.TextTemplating.dll
 C:\Users\dell\Desktop\Damilare\ProjectCS\ContactApi\ContactApi\bin\Debug\net10.0\Newtonsoft.Json.dll
+C:\Users\dell\Desktop\Damilare\ProjectCS\ContactApi\ContactApi\bin\Debug\net10.0\Newtonsoft.Json.Bson.dll
 C:\Users\dell\Desktop\Damilare\ProjectCS\ContactApi\ContactApi\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\dell\Desktop\Damilare\ProjectCS\ContactApi\ContactApi\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\dell\Desktop\Damilare\ProjectCS\ContactApi\ContactApi\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -216,6 +217,7 @@ C:\Users\dell\Desktop\Damilare\ProjectCS\ContactApi\ContactApi\bin\Debug\net10.0
 C:\Users\dell\Desktop\Damilare\ProjectCS\ContactApi\ContactApi\bin\Debug\net10.0\System.Composition.TypedParts.dll
 C:\Users\dell\Desktop\Damilare\ProjectCS\ContactApi\ContactApi\bin\Debug\net10.0\System.Configuration.ConfigurationManager.dll
 C:\Users\dell\Desktop\Damilare\ProjectCS\ContactApi\ContactApi\bin\Debug\net10.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\dell\Desktop\Damilare\ProjectCS\ContactApi\ContactApi\bin\Debug\net10.0\System.Linq.Dynamic.Core.dll
 C:\Users\dell\Desktop\Damilare\ProjectCS\ContactApi\ContactApi\bin\Debug\net10.0\System.Memory.Data.dll
 C:\Users\dell\Desktop\Damilare\ProjectCS\ContactApi\ContactApi\bin\Debug\net10.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\dell\Desktop\Damilare\ProjectCS\ContactApi\ContactApi\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.resources.dll
@@ -326,4 +328,3 @@ C:\Users\dell\Desktop\Damilare\ProjectCS\ContactApi\ContactApi\obj\Debug\net10.0
 C:\Users\dell\Desktop\Damilare\ProjectCS\ContactApi\ContactApi\obj\Debug\net10.0\ContactApi.pdb
 C:\Users\dell\Desktop\Damilare\ProjectCS\ContactApi\ContactApi\obj\Debug\net10.0\ContactApi.genruntimeconfig.cache
 C:\Users\dell\Desktop\Damilare\ProjectCS\ContactApi\ContactApi\obj\Debug\net10.0\ref\ContactApi.dll
-C:\Users\dell\Desktop\Damilare\ProjectCS\ContactApi\ContactApi\bin\Debug\net10.0\System.Linq.Dynamic.Core.dll
